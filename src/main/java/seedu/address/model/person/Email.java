@@ -10,9 +10,9 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
 public class Email {
 
     private static final String SPECIAL_CHARACTERS = "!#$%&'*+/=?`{|}~^.-";
-    public static final String MESSAGE_CONSTRAINTS = "Invalid command format! \n" +
-            "add: Adds a person to the address book. Parameters: n/NAME p/PHONE e/EMAIL [t/TAG]...\n" +
-            "Example: add n/John Doe p/98765432 e/johnd@example.com t/friends t/owesMoney";
+    public static final String MESSAGE_CONSTRAINTS = "Invalid command format! \n"
+            + "add: Adds a person to the address book. Parameters: n/NAME p/PHONE e/EMAIL [t/TAG]...\n"
+            + "Example: add n/John Doe p/98765432 e/johnd@example.com t/friends t/owesMoney";
     // alphanumeric and special characters
     private static final String LOCAL_PART_REGEX = "^[\\w" + SPECIAL_CHARACTERS + "]+";
     private static final String DOMAIN_FIRST_CHARACTER_REGEX = "[^\\W_]"; // alphanumeric characters except underscore
